@@ -12,7 +12,8 @@ axios.get(picturesApi).then((resp) => {
     //al click sul div invoco la funzione
     picturesTemplate += `
               <div class="col" onclick="clickZoom('${url}')" > 
-               <img src="${url}">
+              <img class = "point" src="css/img/pin.svg"/>
+              <img src="${url}">
                  <h4>${title}</h4>
                  <p>${date}</p>
                 </div>`
