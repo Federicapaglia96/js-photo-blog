@@ -4,30 +4,68 @@
     padding: 0;
 }
 
+body {
+    background-image: url(./img/cork.png);
+}
 
-.header{
-    background-color:antiquewhite;
+.header {
+    background-image: url(./img/wall.png);
     width: 100%;
     height: 100px;
 }
 
-h1{
+h1 {
     text-align: center;
     padding: 1rem;
-   
+}
+
+img {
+    max-width: 100%;
 }
 
 .row {
     margin: 90px;
     display: flex;
     flex-wrap: wrap;
-    gap:20px;
+    gap: 20px;
+    justify-content: center;
 }
 
 .col {
-    
+
     width: calc(100%/4);
     padding: 20px;
-    border-radius: 20px;
-    border: 1px solid black;
+    border-radius: 10px;
+    background-color: white;
+}
+
+/* overlay */
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(9, 8, 9, 0.676);
+
+
+}
+
+.overlayimg {
+    height: 60%;
+    
+}
+
+.btn {
+    margin: 20px;
+    border-radius: 8px;
+    padding: 12px 28px;
+    background-color:darksalmon;
 }
